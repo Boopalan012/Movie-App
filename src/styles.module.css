@@ -1,46 +1,60 @@
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  .card {
-    width: calc(33.33% - 20px);
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    max-width: 450px;
-  }
-  
-  .cardImage {
-    object-fit: contain;
-    height: 100%;
-  }
-  .cardHeader {
-    background-color: ButtonFace;
-    padding: 10px;
-  }
-  
-  .cardHeaderTitle {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .cardHeaderSubheader {
-    font-size: 14px;
-  }
-  
-  .iconButton {
-    padding: 6px;
-  }
-  
-  .icon {
-    color: green;
-  }
-  .avatar {
-  background-color: green;
-  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px; /* Add padding to create space around the container */
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  padding: 10px; /* Add padding to create space around the card */
+}
+
+.cardImage {
+  object-fit: contain;
+  height: 100%;
+  margin: 10px; /* Add margin to create a gap between the image and the card edges */
+}
+
+.cardHeader {
+  background-color: ButtonFace;
+  padding: 10px;
+}
+
+.cardHeaderTitle {
+  font-size: 16px;
   font-weight: bold;
 }
 
+.cardHeaderSubheader {
+  font-size: 14px;
+}
+
+.iconButton {
+  padding: 6px;
+}
+
+.icon {
+  color: green;
+}
+
+.avatar {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  @media (max-width: 1200px) {
+    .card {
+      width: calc(50% - 20px);
+    }
+  }
   
+  @media (max-width: 768px) {
+    .card {
+      width: calc(100% - 20px);
+    }
+  }}
+
