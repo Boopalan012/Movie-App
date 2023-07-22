@@ -1,6 +1,6 @@
 import { Avatar, Card, CardContent, CardHeader, CardMedia, Icon, IconButton, Rating, Typography } from "@mui/material";
 import styles from "../styles.module.css";
-import * as Constants from "./Constants";
+import * as Constants from "../Constants/Constants";
 
 
 export const Cards=(props)=>{

@@ -1,10 +1,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import * as Constants from "./Constants";
-import { Cards } from "./Cards";
-import { Headers } from "./Headers";
+import * as Constants from "../Constants/Constants";
+import { Cards } from "../Components/Cards";
 
-const Movies = () => {
+export const Popular = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -22,11 +21,8 @@ const Movies = () => {
 
   return (
     <>
-      <Headers/>
-
-      <Cards movies={movies} />
+    <Cards movies={movies}/>
     </>
   );
 };
 
-export default Movies;
